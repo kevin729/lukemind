@@ -7,11 +7,11 @@ export const HeadingLeftData = [
     {
         title:"Home",
         icon:<Home />,
-        link: "/luke_mind/"
+        link: "/lukemind/"
     },
     {
         title:"My CV",
         icon:<TextSnippet />,
-        link: "/luke_mind/#/cv"
+        link: "/lukemind/#/cv"
     }
 ]

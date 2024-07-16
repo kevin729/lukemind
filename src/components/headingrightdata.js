@@ -6,11 +6,11 @@ export const HeadingRightData = [
     {
         title: "Blog",
         icon: <ViewAgenda />,
-        link: "/luke_mind/#/blogs"
+        link: "/lukemind/#/blogs"
     },
     {
         title: "Profile",
         icon: <Person />,
-        link: "/luke_mind/#/profile"
+        link: "/lukemind/#/profile"
     }
 ]
