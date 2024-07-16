@@ -1,0 +1,290 @@
+html {
+    background-image: linear-gradient(#3d3d3d, black);
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    margin:0;
+    height:auto;
+    min-height:100%;
+}
+
+.hyperlink {
+  color: lightblue;
+}
+
+.margin-left {
+  margin-left: 50px;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-big {
+  margin-bottom: 100px;
+}
+
+.margin-right {
+  margin-right: 50px;
+}
+
+main-body {
+  width: 100%;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.cv-home {
+  width:700px;
+  height: 800px;
+}
+
+.cv-pdf {
+  width:1200px;
+  height: 600px;
+}
+
+.cv {
+  width: 800px;
+  height: 600px;
+}
+
+.CNNImg {
+  width:150px;
+  height:auto;
+}
+
+.drawdroidImg {
+  width:150px;
+  height:300px;
+}
+
+.profile-picture {
+  width:300px;
+  height:auto;
+}
+
+.contact-header {
+  text-align: left;
+  width:200px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-detail {
+  width:100px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-detail * {
+  float: right;
+}
+
+.cert {
+  width:600px;
+  height:auto;
+  
+}
+
+.cert-none {
+  display: none;
+}
+
+.cert-invisible {
+  animation: fadeOut 0.5s;
+}
+
+.cert-show {
+  display: inline-block;
+  animation: fadeIn 0.5s;
+}
+
+.cert-invisible-prev {
+  animation: fadeOutPrev 0.5s;
+}
+
+.cert-show-prev {
+  display: inline-block;
+  animation: fadeInPrev 0.5s;
+}
+
+.pageHeading {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.video {
+      width:300px;
+      height:300px;
+}
+
+#contact_details_wrapper {
+    vertical-align:top;
+    display: inline-block;
+    margin-right:100px;
+}
+
+#social_media_wrapper {
+    display: inline-block;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; transform: translateX(0);}
+  50% { opacity: 0.01; transform: translateX(-5%);}
+  100% { opacity: 0; transform: translateX(-10%);}
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateX(10%);}
+  50% { opacity: 0.01; transform: translateX(5%);}
+  100% { opacity: 1; transform: translateX(0);}
+}
+
+@keyframes fadeOutPrev {
+  0% { opacity: 1; transform: translateX(0);}
+  50% { opacity: 0.01; transform: translateX(5%);}
+  100% { opacity: 0; transform: translateX(10%);}
+}
+
+@keyframes fadeInPrev {
+  0% { opacity: 0; transform: translateX(-10%);}
+  50% { opacity: 0.01; transform: translateX(-5%);}
+  100% { opacity: 1; transform: translateX(0);}
+}
+
+
+@media screen and (max-width:1600px) {
+  .cv {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width:1400px) {
+  .cv-pdf {
+    width: 800px;
+    height: 400px;
+  }
+
+.cv-home {
+  width:600px;
+  height: 800px;
+}
+
+  .cv {
+    width: 500px;
+    height: 600px;
+  }
+
+  .projects {
+      margin:0;
+  }
+
+  .video {
+      width:300px;
+      height:300px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+    .cert {
+      width:400px;
+      height:auto;
+    }
+
+      .cv-pdf {
+        width: 500px;
+        height: 500px;
+      }
+}
+
+@media screen and (max-width:700px) {
+.video {
+    width:200px;
+    height:200px;
+}
+
+.projects {
+    margin:0;
+}
+
+.CNNImg {
+  width:100px;
+  height:auto;
+}
+
+.drawdroidImg {
+  width:auto;
+  height:200px;
+}
+
+  #profile_wrapper {
+    margin-top:50px;
+  }
+
+  .blog-wrapper {
+    margin-top:50px;
+  }
+
+  .cert {
+    width:200px;
+    height:auto;
+  }
+
+    .cv-home {
+      width: 400px;
+      height: 600px;
+    }
+
+  .cv {
+    margin-top:20px;
+    position:absolute;
+    left:-25%;
+    width:150%;
+    height:100%;
+  }
+
+  .cv-home {
+    display:none;
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact-header {
+    font-size: 12px;
+    display: none;
+  }
+  
+  .contact-detail {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .contact-detail * {
+    float:none;
+  }
+
+  .profile-picture {
+    width:250px;
+    height:auto;
+  }
+
+  #contact_details_wrapper {
+      margin:0;
+      display: block;
+  }
+
+  #social_media_wrapper {
+      display: block;
+  }
+}
+
+@media screen and (max-height:700px) {
+  .pageHeading {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}

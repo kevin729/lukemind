@@ -1,0 +1,42 @@
+.formWrapper {
+    margin: 20px auto;
+    padding: 50px 200px;
+}
+
+form {
+    padding:30px;
+}
+
+.margin_bottom {
+    margin-bottom: 50px;
+}
+
+.red_text {
+    color:red;
+}
+
+.grey_section {
+    color:grey;
+    background-color: lightgrey;
+}
+
+.text_input {
+    width:600px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#blog_text_input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.small_text_input {
+    width:200px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
