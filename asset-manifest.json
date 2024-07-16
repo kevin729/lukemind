@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/luke/static/css/main.966c7d17.css",
-    "main.js": "/luke/static/js/main.551b308b.js",
-    "static/js/453.76156354.chunk.js": "/luke/static/js/453.76156354.chunk.js",
-    "static/media/profile.jpg": "/luke/static/media/profile.8e7ae5f36fe8a9e11d4e.jpg",
-    "static/media/me.jpg": "/luke/static/media/me.08a96b75440ccdce7a17.jpg",
-    "static/media/website.png": "/luke/static/media/website.0415223ec0191b487d3d.png",
-    "static/media/learning4.png": "/luke/static/media/learning4.b55818a50bc96e4d521f.png",
-    "static/media/learning1.png": "/luke/static/media/learning1.4003683b63885af106cf.png",
-    "static/media/learning3.png": "/luke/static/media/learning3.ed70c97bf7666af54d11.png",
-    "static/media/learning2.png": "/luke/static/media/learning2.05663ad8029495b2549a.png",
-    "static/media/model.png": "/luke/static/media/model.5efaf0df0b51e5cdedf2.png",
-    "static/media/drawdroid.jpg": "/luke/static/media/drawdroid.7a60d7520daa0157bb34.jpg",
-    "static/media/cv.pdf": "/luke/static/media/cv.63f177cba2cd346ad0f0.pdf",
-    "static/media/tasks.png": "/luke/static/media/tasks.60e0b1a3871fdea8e49c.png",
-    "static/media/CNN.png": "/luke/static/media/CNN.e35ffa8e136e64698fc5.png",
-    "static/media/banner.jpeg": "/luke/static/media/banner.57b1db56b1c5b445915c.jpeg",
-    "static/media/logo.svg": "/luke/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/luke/index.html",
-    "main.966c7d17.css.map": "/luke/static/css/main.966c7d17.css.map",
-    "main.551b308b.js.map": "/luke/static/js/main.551b308b.js.map",
-    "453.76156354.chunk.js.map": "/luke/static/js/453.76156354.chunk.js.map"
+    "main.css": "/lukemind/static/css/main.a5a58cbb.css",
+    "main.js": "/lukemind/static/js/main.7ae5c17b.js",
+    "static/js/453.76156354.chunk.js": "/lukemind/static/js/453.76156354.chunk.js",
+    "static/media/profile.jpg": "/lukemind/static/media/profile.8e7ae5f36fe8a9e11d4e.jpg",
+    "static/media/me.jpg": "/lukemind/static/media/me.08a96b75440ccdce7a17.jpg",
+    "static/media/website.png": "/lukemind/static/media/website.0415223ec0191b487d3d.png",
+    "static/media/learning4.png": "/lukemind/static/media/learning4.b55818a50bc96e4d521f.png",
+    "static/media/learning1.png": "/lukemind/static/media/learning1.4003683b63885af106cf.png",
+    "static/media/learning3.png": "/lukemind/static/media/learning3.ed70c97bf7666af54d11.png",
+    "static/media/learning2.png": "/lukemind/static/media/learning2.05663ad8029495b2549a.png",
+    "static/media/model.png": "/lukemind/static/media/model.5efaf0df0b51e5cdedf2.png",
+    "static/media/drawdroid.jpg": "/lukemind/static/media/drawdroid.7a60d7520daa0157bb34.jpg",
+    "static/media/cv.pdf": "/lukemind/static/media/cv.63f177cba2cd346ad0f0.pdf",
+    "static/media/tasks.png": "/lukemind/static/media/tasks.60e0b1a3871fdea8e49c.png",
+    "static/media/CNN.png": "/lukemind/static/media/CNN.e35ffa8e136e64698fc5.png",
+    "static/media/banner.jpeg": "/lukemind/static/media/banner.57b1db56b1c5b445915c.jpeg",
+    "static/media/logo.svg": "/lukemind/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/lukemind/index.html",
+    "main.a5a58cbb.css.map": "/lukemind/static/css/main.a5a58cbb.css.map",
+    "main.7ae5c17b.js.map": "/lukemind/static/js/main.7ae5c17b.js.map",
+    "453.76156354.chunk.js.map": "/lukemind/static/js/453.76156354.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.966c7d17.css",
-    "static/js/main.551b308b.js"
+    "static/css/main.a5a58cbb.css",
+    "static/js/main.7ae5c17b.js"
   ]
 }
