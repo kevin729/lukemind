@@ -18,6 +18,6 @@ export const Sidebardata = [
     {
         title:"",
         icon:<GitHub />,
-        link: "https://www.instagram.com/kevinthemeh/"
+        link: "https://github.com/kevin729"
     }
 ]
