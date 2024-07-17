@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Chart } from 'react-google-charts';
 import "./styles/githubchart.css"
 
+
 const URL = 'https://api.github.com/search/repositories?q=user:kevin729'
 
 const GithubInfo = () => {
@@ -60,8 +61,10 @@ const GithubInfo = () => {
         })    
     }, [])
 
+    console.log(btoa(("token")))
+
     return (    
-        <div>
+        <div id="githubChartWrapper">
             <Chart
                 chartType="PieChart"
                 data={languages}

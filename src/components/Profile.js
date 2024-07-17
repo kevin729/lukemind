@@ -32,9 +32,9 @@ function Profile() {
                 </div>
             </div>
 
-            <div id="social_media_wrapper">
+            <div className="inline-block">
                 <div>
-                    <img src={ProfilePicture} className="profile-picture" />
+                    <img src={ProfilePicture} id="profile-picture" />
                 </div>
             </div>
             

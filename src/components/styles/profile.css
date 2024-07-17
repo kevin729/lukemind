@@ -1,3 +1,16 @@
 #profile_wrapper {
     height:100%;
 }
+
+#profile-picture {
+    width: 300px;
+    height: auto;
+}
+
+#githubChartWrapper {
+    width: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+
+}
