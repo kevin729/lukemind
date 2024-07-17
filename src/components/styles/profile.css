@@ -7,10 +7,19 @@
     height: auto;
 }
 
-#githubChartWrapper {
-    width: 100px;
-}
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
+    #githubChartWrapper {
+        display: none;
+        align-items: center;
+    }
 
+    .githubChart {
+        width: 100px;
+    }
+
+    #profile-picture {
+        width: 200px;
+        height: auto;
+    }    
 }

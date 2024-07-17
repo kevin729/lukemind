@@ -39,11 +39,15 @@ const GithubInfo = () => {
             }))
         }
         
-        const fetchData = async () => {
+        const fetchRepos = async () => {
             const languageList = fetch(URL)
                 .then((response) => response.json())
                 .then((data) => {
                     const languageList = []
+
+                    if(!data.items) 
+                        return
+
                     data.items.map(repo => {
                         languageList.push(repo.languages_url)
                     })
@@ -56,7 +60,7 @@ const GithubInfo = () => {
 
         }
 
-        fetchData().then(languageList => {
+        fetchRepos().then(languageList => {
             fetchLanguages(languageList)
         })    
     }, [])
@@ -66,9 +70,10 @@ const GithubInfo = () => {
     return (    
         <div id="githubChartWrapper">
             <Chart
+                className="githubChart"
                 chartType="PieChart"
                 data={languages}
-                width={400}
+                width={300}
             />
         </div>
 

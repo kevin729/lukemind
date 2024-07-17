@@ -2,6 +2,7 @@ import React  from "react";
 import { TextSnippet } from "@mui/icons-material";
 import { LinkedIn } from "@mui/icons-material";
 import { Instagram } from "@mui/icons-material";
+import { GitHub } from "@mui/icons-material";
 
 export const Sidebardata = [
     {
@@ -12,6 +13,11 @@ export const Sidebardata = [
     {
         title:"",
         icon:<Instagram />,
+        link: "https://www.instagram.com/kevinthemeh/"
+    },
+    {
+        title:"",
+        icon:<GitHub />,
         link: "https://www.instagram.com/kevinthemeh/"
     }
 ]
