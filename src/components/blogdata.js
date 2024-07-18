@@ -12,11 +12,6 @@ export const Blogdata = [
                 text: "I added some functions to fetch githubs api to get a list of my repositories then fetch language data using the urls in a list from the first calls response in a loop by mapping the urls and fetching the language data then after the loop retrieved the promised data of json as a list and summed up the languages into a single map. Then iterated through the map to create a list to set and assign to a chart.",
             },
             {
-                title: "Github API",
-                heading: "16/07/2024",
-                text: "I added some functions to fetch githubs api to get a list of my repositories then fetch language data using the urls in a list from the first calls response in a loop by mapping the urls and fetching the language data then after the loop retrieved the promised data of json as a list and summed up the languages into a single map. Then iterated through the map to create a list to set and assign to a chart.",
-            },
-            {
                 title: "Fonts",
                 heading: "01/04/2024",
                 text: "On my eportfolio, I have added the fonts, Georgia, serif and 'Times New Roman', serif. Times new roman looks more professional, however can be hard to read in a small font, therefore it is better to use this font for either small sentances or pages with big text. Georgia seems to be better suited for both UI text and single paragraphs like an introduction text. I also later found that for contact details, a simple plain font works better, so I also used Arial, Helvetica, sans-serif on the profile page.",
