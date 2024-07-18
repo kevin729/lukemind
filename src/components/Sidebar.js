@@ -9,7 +9,7 @@ const Sidebar = () => { return (
                 {
                     Sidebardata.map((val, key) => {
                         return (
-                            <a href={val.link}>
+                            <a href={val.link} target="_blank">
                                 <li key={key} className="sidebar-Item">
                                     <div>
                                         <div>
