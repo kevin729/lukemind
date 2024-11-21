@@ -39,7 +39,7 @@
 
     #about_me_wrapper {
         display: inline-block;
-        width:200px;
+        width:150px;
         vertical-align:top;
     }
 
@@ -52,6 +52,12 @@
 
     #me {
         width:150px;
+    }
+
+    #me_wrapper {
+        display: inline-block;
+        width:240px;
+        animation: fadeToLeft 2s;
     }
 }
 
@@ -69,13 +75,13 @@
 
     #about_me_wrapper {
         display: inline-block;
-        width:100px;
+        width:70px;
         vertical-align:top;
     }
 
     #me_wrapper {
         display: inline-block;
-        width:100px;
+        width:120px;
         animation: fadeToLeft 2s;
     }
 
