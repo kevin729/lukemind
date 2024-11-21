@@ -1,6 +1,6 @@
 #about_me_wrapper {
     display: inline-block;
-    width:400px;
+    width:200px;
     vertical-align:top;
 }
 
@@ -23,12 +23,12 @@
 
 #me_wrapper {
     display: inline-block;
-    width:200px;
+    width:400px;
     animation: fadeToLeft 2s;
 }
 
-#me {
-    width:200px;
+#code {
+    width:400px;
 }
 
 #learning {

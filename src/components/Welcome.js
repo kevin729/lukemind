@@ -15,8 +15,7 @@ class Welcome extends Component {
             <div>
                 <Introduction />
                 <Learning />
-                <Products />
-
+                
                 <div>
                     <iframe src="https://docs.google.com/document/d/e/2PACX-1vQ1rpLjCph9RsZnpgKiM4yUhfbD1JOjwaK2JrAZhJ5WXteT87LAlRQyjBhBeFJWHSa_BEGFXgVofG57/pub?embedded=true" className="cv-home"></iframe>
                 </div>

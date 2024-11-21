@@ -61,12 +61,7 @@ function prev() {
 }
 
 function showSlide(cert, prevDirection) {
-    if (prevDirection) {
-        cert.className = 'cert cert-show-prev'
-    } else {
-        cert.className = 'cert cert-show'
-    }
-    
+    cert.className = prevDirection ? 'cert cert-show-prev' : 'cert cert-show'
     cert.addEventListener('animationend', function eventHandlier(e) { 
         animating = false;
         if (callback) {
@@ -79,12 +74,7 @@ function showSlide(cert, prevDirection) {
 
 function clearSlide(oldCert, newCert, prevDirection) {
     animating = true;
-    if (prevDirection) {
-        oldCert.className = 'cert cert-invisible-prev'
-    } else {
-        oldCert.className = 'cert cert-invisible'
-    }
-    
+    oldCert.className = prevDirection ? 'cert cert-invisible-prev' : 'cert cert-invisible'
     oldCert.addEventListener('animationend', function eventHandlier(e) { 
         oldCert.className = 'cert cert-none' 
         showSlide(newCert, prevDirection)
@@ -92,7 +82,7 @@ function clearSlide(oldCert, newCert, prevDirection) {
     })
 }
 
-function update(prevDirection, callback) {
+function update(prevDirection) {
     clearInterval(timer)
     timer = setInterval(next, 5000)
 

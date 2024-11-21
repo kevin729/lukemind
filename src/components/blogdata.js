@@ -19,7 +19,7 @@ export const Blogdata = [
             {
                 title: "Certificate Slider",
                 heading: "04/03/2024",
-                text: "In my welcome component, I want to add an image slider which will display and animate my online certificates. I started by adding adding a list of images",
+                text: "In my welcome component, I want to add an image slider which will display and animate my online certificates. I started by adding adding a list of images.",
             },
             {
                 title: "React UI",
