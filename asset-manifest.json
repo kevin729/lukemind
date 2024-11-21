@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lukemind/static/css/main.39613257.css",
+    "main.css": "/lukemind/static/css/main.04a4205f.css",
     "main.js": "/lukemind/static/js/main.67724b57.js",
     "static/js/453.76156354.chunk.js": "/lukemind/static/js/453.76156354.chunk.js",
     "static/media/profile.jpg": "/lukemind/static/media/profile.8e7ae5f36fe8a9e11d4e.jpg",
@@ -18,12 +18,12 @@
     "static/media/flow.png": "/lukemind/static/media/flow.65d2a2aef4fa115e4ad5.png",
     "static/media/logo.svg": "/lukemind/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/lukemind/index.html",
-    "main.39613257.css.map": "/lukemind/static/css/main.39613257.css.map",
+    "main.04a4205f.css.map": "/lukemind/static/css/main.04a4205f.css.map",
     "main.67724b57.js.map": "/lukemind/static/js/main.67724b57.js.map",
     "453.76156354.chunk.js.map": "/lukemind/static/js/453.76156354.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39613257.css",
+    "static/css/main.04a4205f.css",
     "static/js/main.67724b57.js"
   ]
 }
