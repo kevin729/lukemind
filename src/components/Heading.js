@@ -16,7 +16,7 @@ const Heading = () => {
                                     return (
                                         <a key={key} href={val.link} className="menu-link">
                                             <li className="menu-item">
-                                                <div>
+                                                <div id={val.class}>
                                                     <div>
                                                         {val.icon}
                                                     </div>
