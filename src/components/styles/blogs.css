@@ -1,6 +1,5 @@
 .blog-wrapper {
     padding: 20px;
-    background-color: blue;
 }
 
 @media screen and (max-width: 700px) {
