@@ -52,8 +52,6 @@ const GithubInfo = () => {
 
                     return languageList
                 })
-
-            
             return languageList
         }
 
