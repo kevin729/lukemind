@@ -25,7 +25,7 @@ function Blogs() {
     })
 
     return (
-        <div className="blog-wrapper" ref={blogWrapperRef} dangerouslySetInnerHTML={{__html: BlogRetriever()}}>
+        <div className="blog-wrapper" ref={blogWrapperRef} dangerouslySetInnerHTML={{__html: content}}>
         </div>
     )
 }
