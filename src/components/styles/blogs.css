@@ -1,6 +1,7 @@
 .blog-wrapper {
     padding: 50px 100px;
     background-color: black;
+    display:none;
 }
 
 p {

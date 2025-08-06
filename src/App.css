@@ -264,10 +264,6 @@ main-body {
     height: 100%;
   }
 
-  #cv_nav {
-    display: none;
-  }
-
   .contact-header {
     font-size: 12px;
     display: none;
