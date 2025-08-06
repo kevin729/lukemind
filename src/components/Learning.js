@@ -96,7 +96,7 @@ function update(prevDirection) {
 
 const Learning = () => {
     return (        
-        <div className="margin-bottom-big">
+        <div className="margin-bottom-big inline-block">
             <div>
                 {
                     slideImages.map((val, key) => {

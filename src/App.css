@@ -27,10 +27,6 @@ html {
   margin-right: 50px;
 }
 
-main-body {
-  width: 100%;
-}
-
 .inline-block {
   display: inline-block;
   vertical-align: top;
@@ -56,9 +52,9 @@ main-body {
   height:auto;
 }
 
-.drawdroidImg {
-  width:150px;
-  height:300px;
+.lukemindImg {
+  width:170px;
+  height:auto;
 }
 
 .profile-picture {
@@ -205,7 +201,7 @@ main-body {
         height:auto;
       }
       
-      .drawdroidImg {
+      .lukemindImg {
         width:auto;
         height:200px;
       }
@@ -226,7 +222,7 @@ main-body {
   height:auto;
 }
 
-.drawdroidImg {
+.lukemindImg {
   width:auto;
   height:100px;
 }

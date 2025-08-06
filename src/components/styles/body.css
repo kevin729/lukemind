@@ -1,26 +1,6 @@
 .main-body {
     margin: 0;
-    width: 80%;
+    width: 100%;
     height: 70%;
-    padding: 10% 10%;
     color:white;
-    
-}
-
-@media screen and (max-width:1200px) {
-      .main-body {
-        padding: 20% 10%;
-    }
-}
-
-@media screen and (max-width:700px) {
-      .main-body {
-        padding: 10% 10%;
-    }
-}
-
-@media screen and (max-height:700px) {
-      .main-body {
-        padding: 10% 10%;
-    }
 }

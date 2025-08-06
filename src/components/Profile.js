@@ -2,10 +2,13 @@ import React from "react";
 import ProfilePicture from "./images/profile.jpg"
 import './styles/profile.css'
 import Github from "./GithubInfo";
+import Sidebar from './Sidebar';
 
 function Profile() {
+    
     return (
         <div id="profile_wrapper">
+            <Sidebar />
             <h1 className="pageHeading">Kevin Luke Martin</h1>
             <div id="contact_details_wrapper">
                 <div className="margin-bottom">

@@ -19,7 +19,7 @@ const Products = () => {
                     </div>
                 </div>
                 <div className="inline-block">
-                    <img className="drawdroidImg" src={tasks}/>
+                    <img className="lukemindImg" src={tasks}/>
                 </div>
             </div>
         </div>

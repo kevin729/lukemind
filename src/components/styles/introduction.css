@@ -1,3 +1,7 @@
+#introduction_wrapper {
+    padding: 200px;
+}
+
 #about_me_wrapper {
     display: inline-block;
     width:200px;
@@ -37,6 +41,9 @@
 
 @media screen and (max-width:1200px) {
 
+
+
+
     #about_me_wrapper {
         display: inline-block;
         width:150px;
@@ -62,9 +69,6 @@
 }
 
 @media screen and (max-width:700px) {
-    #introduction_wrapper {
-        margin-top:100px;
-    }
 
     .about_me {
         text-align: justify;

@@ -19,12 +19,12 @@ const GithubInfo = () => {
             
             Promise.all(promisedListMap).then((languages => {
                 let languageMap = {}
-                languages.map(language => {
-                    Object.keys(language).map(key => {
+                languages.map(repoLanguageMap => {
+                    Object.keys(repoLanguageMap).map(key => {
                         if (languageMap.hasOwnProperty(key)) {
-                            languageMap[key] += language[key]
+                            languageMap[key] += repoLanguageMap[key]
                         } else {
-                            languageMap[key] = language[key]
+                            languageMap[key] = repoLanguageMap[key]
                         }
                     })
                 })
@@ -43,13 +43,11 @@ const GithubInfo = () => {
             const languageList = fetch(URL)
                 .then((response) => response.json())
                 .then((data) => {
-                    const languageList = []
-
                     if(!data.items) 
                         return
 
-                    data.items.map(repo => {
-                        languageList.push(repo.languages_url)
+                    const languageList = data.items.map(repo => {
+                        return repo.languages_url
                     })
 
                     return languageList
@@ -61,7 +59,7 @@ const GithubInfo = () => {
 
         fetchRepos().then(languageList => {
             fetchLanguages(languageList)
-        })    
+        })
     }, [])
 
     return (    

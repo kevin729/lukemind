@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import './styles/form.css'
 import './styles/blogs.css'
 import { Blogdata } from "./blogdata";
-import BlogRetriever from "./BlogRetriever"
 import { ForkLeft } from "@mui/icons-material"
 
 function Blogs() {
