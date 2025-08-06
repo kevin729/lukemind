@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lukemind/static/css/main.b13cd6de.css",
-    "main.js": "/lukemind/static/js/main.786c1335.js",
+    "main.css": "/lukemind/static/css/main.dbc163ff.css",
+    "main.js": "/lukemind/static/js/main.6f03b785.js",
     "static/js/453.f9c01664.chunk.js": "/lukemind/static/js/453.f9c01664.chunk.js",
     "static/media/profile.jpg": "/lukemind/static/media/profile.8e7ae5f36fe8a9e11d4e.jpg",
     "static/media/website.png": "/lukemind/static/media/website.0415223ec0191b487d3d.png",
@@ -17,12 +17,12 @@
     "static/media/banner.jpeg": "/lukemind/static/media/banner.57b1db56b1c5b445915c.jpeg",
     "static/media/logo.svg": "/lukemind/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/lukemind/index.html",
-    "main.b13cd6de.css.map": "/lukemind/static/css/main.b13cd6de.css.map",
-    "main.786c1335.js.map": "/lukemind/static/js/main.786c1335.js.map",
+    "main.dbc163ff.css.map": "/lukemind/static/css/main.dbc163ff.css.map",
+    "main.6f03b785.js.map": "/lukemind/static/js/main.6f03b785.js.map",
     "453.f9c01664.chunk.js.map": "/lukemind/static/js/453.f9c01664.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b13cd6de.css",
-    "static/js/main.786c1335.js"
+    "static/css/main.dbc163ff.css",
+    "static/js/main.6f03b785.js"
   ]
 }
