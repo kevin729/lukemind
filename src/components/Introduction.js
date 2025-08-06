@@ -1,6 +1,5 @@
 import React from "react";
 import './styles/introduction.css';
-import flow from "./images/flow.png"
 import Products from "./Products";
 
 const Introduction = () => {

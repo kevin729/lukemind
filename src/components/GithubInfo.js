@@ -3,9 +3,10 @@ import { Chart } from 'react-google-charts';
 import "./styles/githubchart.css"
 
 
-const URL = 'https://api.github.com/search/repositories?q=user:kevin729'
+
 
 const GithubInfo = () => {
+    const URL = 'https://api.github.com/search/repositories?q=user:kevin729'
     const [languages, setLanguages] = useState()
 
     useEffect(() => {
@@ -35,7 +36,6 @@ const GithubInfo = () => {
                 })
 
                 setLanguages(languageData)
-                
             }))
         }
         
@@ -57,15 +57,12 @@ const GithubInfo = () => {
 
             
             return languageList
-
         }
 
         fetchRepos().then(languageList => {
             fetchLanguages(languageList)
         })    
     }, [])
-
-    console.log(btoa(("token")))
 
     return (    
         <div id="githubChartWrapper">

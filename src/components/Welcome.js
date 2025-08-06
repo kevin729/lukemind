@@ -4,6 +4,7 @@ import Learning from "./Learning";
 import Products from "./Products";
 import CV from "./CV";
 import cv from './docs/cv.pdf'
+import "./styles/welcome.css"
 
 class Welcome extends Component {
     constructor(props) {
@@ -12,7 +13,7 @@ class Welcome extends Component {
     
     render() {
         return (
-            <div>
+            <div id="WelcomeWrapper">
                 <Introduction />
                 <Learning />
                 

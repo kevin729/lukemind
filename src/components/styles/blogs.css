@@ -1,16 +1,24 @@
 .blog-wrapper {
-    padding: 20px;
+    padding: 50px 100px;
+    background-color: black;
+}
+
+p {
+    color: lime;
 }
 
 @media screen and (max-width: 700px) {
     .blog-wrapper {
-        padding: 10%;
+        padding: 50px 30px;
+    }
+
+    .blog-wrapper p span {
+        text-align: left;
     }
 }
 
 @media screen and (max-height: 700px) {
     .blog-wrapper {
-        margin-top: 50px;
-        padding: 20px;
+        padding: 50px 50px;
     }
 }

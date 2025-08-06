@@ -12,11 +12,6 @@ export const Sidebardata = [
     },
     {
         title:"",
-        icon:<Instagram />,
-        link: "https://www.instagram.com/kevinthemeh/"
-    },
-    {
-        title:"",
         icon:<GitHub />,
         link: "https://github.com/kevin729"
     }
