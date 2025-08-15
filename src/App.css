@@ -4,7 +4,18 @@ html {
     font-size: 20px;
     margin:0;
     height:auto;
-    min-height:100%;
+        height: 100%;
+    min-height: 100%;
+}
+
+#root {
+    height: 100%;
+    min-height: 100%;
+}
+
+.App {
+    height: 100%;
+    min-height: 100%;
 }
 
 .hyperlink {
@@ -48,35 +59,13 @@ html {
 }
 
 .CNNImg {
-  width:150px;
+  width:200px;
   height:auto;
 }
 
 .lukemindImg {
-  width:170px;
-  height:auto;
-}
-
-.profile-picture {
   width:300px;
   height:auto;
-}
-
-.contact-header {
-  text-align: left;
-  width:200px;
-  font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.contact-detail {
-  width:100px;
-  font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.contact-detail * {
-  float: right;
 }
 
 .cert {
@@ -185,7 +174,7 @@ html {
   }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1300px) {
     .cert {
       width:400px;
       height:auto;
@@ -200,11 +189,13 @@ html {
         width:100px;
         height:auto;
       }
-      
-      .lukemindImg {
-        width:auto;
-        height:200px;
-      }
+}
+
+@media screen and (max-width:1200px) {
+    .lukemindImg {
+        width: 220px;
+        height: auto;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -223,8 +214,8 @@ html {
 }
 
 .lukemindImg {
-  width:auto;
-  height:100px;
+  width:200px;
+  height:auto;
 }
 
   .cert {
@@ -250,30 +241,6 @@ html {
     display:none;
     width: 100%;
     height: 100%;
-  }
-
-  .contact-header {
-    font-size: 12px;
-    display: none;
-  }
-  
-  .contact-detail {
-    width: 100%;
-    font-size: 12px;
-  }
-
-  .contact-detail * {
-    float:none;
-  }
-
-  .profile-picture {
-    width:250px;
-    height:auto;
-  }
-
-  #contact_details_wrapper {
-      margin:0;
-      display: block;
   }
 
   #social_media_wrapper {

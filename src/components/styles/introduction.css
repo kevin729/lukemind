@@ -1,11 +1,37 @@
 #introduction_wrapper {
-    padding: 200px 10px;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/spinnaker.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -300px;
+    background-attachment: fixed;
+    
+}
+
+#introduction {
+    width:100%;
+    height:800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    display: none;
+}
+
+#title h1 {
+    margin:0;
+    text-align: left;
 }
 
 #about_me_wrapper {
     display: inline-block;
     width:200px;
-    vertical-align:top;
+    margin-right: 600px;
+    height: 300px;
+    
 }
 
 .about_me {
@@ -27,7 +53,8 @@
 
 #me_wrapper {
     display: inline-block;
-    width:400px;
+    width:200px;
+    height: 666px;
     animation: fadeToLeft 2s;
 }
 
@@ -39,15 +66,58 @@
     margin:0 0 300px 0;
 }
 
+#introduction_wrapper h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+@media screen and (max-width:1600px) {
+    #introduction_wrapper {
+        width: 100%;
+        height: 100%;
+
+        background-image: url("../images/spinnaker.jpg");
+        background-size: cover;
+        background-position-y: -100px;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    #introduction_wrapper {
+        width: 100%;
+        height: 100%;
+
+        background-image: url("../images/spinnaker.jpg");
+        background-size: cover;
+        background-position-y: 0px;
+        background-attachment: fixed;
+    }
+
+    .lukemindImg {
+        width:250px;
+        height:auto;
+    }
+}
+
 @media screen and (max-width:1200px) {
 
+    #introduction_wrapper {
+        width: 100%;
+        height: 100%;
 
-
+        background-image: url("../images/spinnaker.jpg");
+        background-size: cover;
+        background-position-y: 0px;
+        background-attachment: fixed;
+    }
 
     #about_me_wrapper {
         display: inline-block;
-        width:150px;
-        vertical-align:top;
+        width:200px;
+        margin-right: 280px;
+        height: 300px;
+        vertical-align:middle;
     }
 
     .about_me {
@@ -68,7 +138,55 @@
     }
 }
 
+@media screen and (max-width:900px) {
+    #introduction_wrapper {
+        width: 100%;
+        height: 100%;
+
+        background-image: url("../images/spinnaker.jpg");
+        background-size: cover;
+        background-position-x: -50px;
+        background-attachment: fixed;
+    }
+
+    #about_me_wrapper {
+        display: inline-block;
+        width:200px;
+        margin-right: 50px;
+        height: 300px;
+        vertical-align:middle;
+    }
+
+    .lukemindImg {
+        width:200px;
+        height:auto;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    #introduction_wrapper {
+        width: 100%;
+        height: 100%;
+
+        background-image: url("../images/spinnaker.jpg");
+        background-size: cover;
+        background-position-x:-100px;
+        background-attachment: fixed;
+    }
+}
+
 @media screen and (max-width:700px) {
+
+    #introduction_wrapper {
+        width: 100%;
+        height: 100%;
+
+        background-image: url("../images/spinnaker.jpg");
+        background-size: cover;
+        background-position-x: -130px;
+        background-attachment: fixed;
+    }
 
     .about_me {
         text-align: justify;
@@ -80,7 +198,7 @@
     #about_me_wrapper {
         display: inline-block;
         width:70px;
-        vertical-align:top;
+        margin-right: 200px;   
     }
 
     #me_wrapper {
@@ -91,5 +209,57 @@
 
     #me {
         width:100px;
+    }
+
+    #introduction_wrapper h1 {
+    text-align: center;
+    font-size: 30px;
+}
+}
+
+@media screen and (max-width:600px) {
+    #introduction_wrapper {
+        width: 100%;
+        height: 100%;
+
+        background-image: url("../images/spinnaker.jpg");
+        background-size: cover;
+        background-position-x: -100px;
+        background-attachment: fixed;
+    }
+
+    .lukemindImg {
+        width:200px;
+        height:auto;
+    }
+
+        #about_me_wrapper {
+        display: inline-block;
+        width:70px;
+        margin-right: 100px;   
+    }
+}
+
+@media screen and (max-width:500px) {
+    #introduction_wrapper {
+        width: 100%;
+        height: 100%;
+
+        background-image: url("../images/spinnaker.jpg");
+        background-size: cover;
+        background-position-x: -100px;
+        background-attachment: fixed;
+    }
+
+    .lukemindImg {
+        width:170px;
+        height:auto;
+        
+    }
+
+        #about_me_wrapper {
+        display: inline-block;
+        width:70px;
+        margin-right: 100px;   
     }
 }

@@ -9,8 +9,71 @@
     height: auto;
 }
 
+.contact-header {
+  text-align: left;
+  width:200px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-detail {
+  width:100px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact_details {
+    margin-bottom: 100px;
+}
+
+.contact-detail * {
+  float: right;
+}
+
+@media screen and (max-width: 1400px) {
+    #profile_wrapper {
+        height:100%;
+        text-align: center;
+        padding: 80px 100px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #contact_details_wrapper {
+        width: 200px;
+        text-align: left;
+    }
+    
+    .contact-detail {
+        text-align: left;
+    }
+    .contact-detail * {
+        float: left;
+    }
+
+    .contact-header {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 800px) {
+    #profile_wrapper {
+        height:100%;
+        text-align: center;
+        padding: 50px 100px;
+    }
+
+    #profile {
+        justify-items: center;
+        width: 100%;
+    }
+
+    #contact_details_wrapper {
+        width: 300px;
+        text-align: left;
+        margin:0;
+    }
+
     #githubChartWrapper {
         display: none;
         align-items: center;
@@ -18,6 +81,63 @@
 
     .githubChart {
         width: 100px;
+    }
+
+    #profile-picture {
+        width: 300px;
+        height: auto;
+    }    
+}
+
+@media screen and (max-width: 700px) {
+    .contact-detail  {
+        float:none;
+    }
+
+  .profile-picture {
+    width:250px;
+    height:auto;
+  }
+
+    #contact_details_wrapper {
+        width: 200px;
+        text-align: left;
+    }
+
+  .contact-header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    #profile_wrapper {
+        height:100%;
+        padding: 100px 114px;
+    }
+
+    #profile {
+        justify-items: center;
+        width: 100%;
+    }
+
+    #contact_details_wrapper {
+        width: 200px;
+        text-align: left;
+    }
+
+    #contact_details {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .contact-detail {
+        font-size: 11px;
+    }
+
+
+
+    h1 {
+        font-size: 18px;
     }
 
     #profile-picture {

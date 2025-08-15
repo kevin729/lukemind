@@ -10,8 +10,8 @@ function Profile() {
         <div>
             <Sidebar />
             <div id="profile_wrapper">
-            
-                <h1 className="pageHeading">Kevin Luke Martin</h1>
+                <div id="profile">
+                    <h1 className="pageHeading">Kevin Luke Martin</h1>
                 <div id="contact_details_wrapper">
                     <div className="margin-bottom">
                         <div className="contact-header inline-block">
@@ -22,7 +22,7 @@ function Profile() {
                         </div>
                     </div>
 
-                    <div className="margin-bottom-big">
+                    <div id="contact_details">
                         <div className="contact-header inline-block">
                             <h3>Mobile:</h3>
                         </div>
@@ -41,6 +41,7 @@ function Profile() {
                     <div>
                         <img src={ProfilePicture} id="profile-picture" />
                     </div>
+                </div>
                 </div>
             </div>
         </div>

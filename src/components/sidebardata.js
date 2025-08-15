@@ -8,11 +8,13 @@ export const Sidebardata = [
     {
         title:"",
         icon:<LinkedIn />,
-        link: "https://www.linkedin.com/in/kmartin729/"
+        link: "https://www.linkedin.com/in/kmartin729/",
+        class: "sidebar-Item-Top"
     },
     {
         title:"",
         icon:<GitHub />,
-        link: "https://github.com/kevin729"
+        link: "https://github.com/kevin729",
+        class: "sidebar-Item-Bottom"
     }
 ]

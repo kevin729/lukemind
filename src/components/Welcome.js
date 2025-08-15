@@ -15,9 +15,8 @@ class Welcome extends Component {
     render() {
         return (
             <div id="WelcomeWrapper">
-                <Sidebar />
                 <Introduction />
-                <Learning />
+                <Sidebar />
             </div>
         )
     }

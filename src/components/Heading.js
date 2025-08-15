@@ -29,9 +29,6 @@ const Heading = () => {
                                     )
                                 })
                             }
-                            <div>
-                                <img id="banner" width="250px" src={Banner}/>
-                            </div>
                         </ul>
                     </div>
 
