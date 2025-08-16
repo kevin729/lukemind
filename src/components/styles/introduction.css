@@ -20,18 +20,12 @@
     height: 100%;
 }
 
-#title_wrapper {
-    text-align: left;
-    padding: 200px 0 0 200px;
+#about_me {
+    text-align: justify;
     color: lightgreen;
+    padding: 200px 100px 0 200px;
 }
 
-#skill_list_wrapper {
-    padding: 0 200px;
-    color: lightgreen;
-    list-style-type: none;
-}
-    
 #skill_list_wrapper ul {
     text-align: left;
 }
@@ -46,7 +40,6 @@
     padding: 200px 0 200px 0;
 }
 
-
 @keyframes fadeToRight {
   0% { opacity: 0; transform: translateX(-20%);}
   100% { opacity: 1; transform: translateX(0%);}
@@ -57,98 +50,45 @@
   100% { opacity: 1; transform: translateX(0%);}
 }
 
-@media screen and (max-width: 1400px) {
-    #title_wrapper {
-        padding: 100px;
-        color: lightgreen;
-    }
 
-    #skill_list_wrapper {
-        padding: 0 100px;
-        color: lightgreen;
-        list-style-type: none;
-    }
-    
-    #skill_list_wrapper ul {
-        text-align: left;
+@media screen and (max-width: 1600px) {
+    #title_wrapper {
+        font-size: 14px;
     }
 }
 
-@media screen and (max-width: 1400px) {
-    #title_wrapper {
-        padding: 100px 100px 0 100px;
-        color: lightgreen;
-        font-size: 16px;
-    }
 
-    #skill_list_wrapper {
-        padding: 0 100px;
-        color: lightgreen;
-        list-style-type: none;
-    }
-    
-    #skill_list_wrapper ul {
-        text-align: left;
+@media screen and (max-width: 1400px) {
+    #about_me {
+        padding: 110px 0 0 110px;
     }
 }
 
 @media screen and (max-width: 1100px) {
     #introduction {
-        background-image: url("../images/spinnaker_neon.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    #title_wrapper {
-        padding: 100px 100px 0 100px;
-        color: lightgreen;
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    #title_wrapper {
-        padding: 100px 100px 0 50px;
-        color: lightgreen;
-        font-size: 10px;
-    }
-
-    #skill_list_wrapper {
-        padding: 0 50px;
-        color: lightgreen;
-        list-style-type: none;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #introduction {
-        background-image: url("../images/spinnaker_neon.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
     }
 
-        #title_wrapper {
-        padding: 100px 100px 0 10px;
-        color: lightgreen;
-        font-size: 10px;
+    #about_me {
+        padding: 70px 0 0 20px;
     }
 
-    #skill_list_wrapper {
-        padding: 0 10px;
-        color: lightgreen;
-        list-style-type: none;
+    #title_wrapper {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #title_wrapper {
+        font-size: 10px;
     }
 }
 
 @media screen and (max-width: 600px) {
     #introduction {
-        background-image: url("../images/spinnaker_neon.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -159,8 +99,16 @@
         width:60%;
     }
 
+    #about_me {
+        padding:60px 0 0 10px;
+    }
+
+    #about_me ul {
+        list-style-type: none;
+        padding: 0 0 0 10px;
+    }
+
     #title_wrapper {
-        padding: 50px 0 0 10px;
         color: lightgreen;
     }
 
@@ -170,9 +118,6 @@
 
     #skill_list_wrapper {
         font-size: 14px;
-        padding: 0 10px;
-        color: lightgreen;
-        list-style-type: none;
     }
 
     #update {
@@ -184,9 +129,28 @@
     }
 }
 
+@media screen and (max-width: 400px) {
+    #title_wrapper h1 {
+        font-size: 18px;
+    }
+
+    #skill_list_wrapper {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #title_wrapper h1 {
+        font-size: 14px;
+    }
+
+    #skill_list_wrapper {
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-height: 500px) {
     #introduction {
-        background-image: url("../images/spinnaker_neon.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position-x: center;
