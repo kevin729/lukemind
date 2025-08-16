@@ -1,45 +1,51 @@
 #introduction_wrapper {
     width: 100%;
     height: 100%;
-    background-image: url("../images/spinnaker.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: -300px;
-    background-attachment: fixed;
-    
 }
 
 #introduction {
     width:100%;
-    height:800px;
+    height:100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#title {
-    display: none;
-}
-
-#title h1 {
-    margin:0;
-    text-align: left;
+    background-image: url("../images/spinnaker_edge.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -200px;
+    background-attachment: fixed;
 }
 
 #about_me_wrapper {
-    display: inline-block;
-    width:200px;
-    margin-right: 600px;
-    height: 300px;
-    
+    width: 50%;
+    height: 100%;
 }
 
-.about_me {
-    text-align: justify;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    animation: fadeToRight 2s;
+#title_wrapper {
+    text-align: left;
+    padding: 200px 0 0 200px;
+    color: lightgreen;
 }
+
+#skill_list_wrapper {
+    padding: 0 200px;
+    color: lightgreen;
+    list-style-type: none;
+}
+    
+#skill_list_wrapper ul {
+    text-align: left;
+}
+
+#update_wrapper {
+    color: lightgreen;
+    width: 50%;
+    height: 100%;
+}
+
+#update {
+    padding: 200px 0 200px 0;
+}
+
 
 @keyframes fadeToRight {
   0% { opacity: 0; transform: translateX(-20%);}
@@ -51,215 +57,153 @@
   100% { opacity: 1; transform: translateX(0%);}
 }
 
-#me_wrapper {
-    display: inline-block;
-    width:200px;
-    height: 666px;
-    animation: fadeToLeft 2s;
+@media screen and (max-width: 1400px) {
+    #title_wrapper {
+        padding: 100px;
+        color: lightgreen;
+    }
+
+    #skill_list_wrapper {
+        padding: 0 100px;
+        color: lightgreen;
+        list-style-type: none;
+    }
+    
+    #skill_list_wrapper ul {
+        text-align: left;
+    }
 }
 
-#code {
-    width:400px;
+@media screen and (max-width: 1400px) {
+    #title_wrapper {
+        padding: 100px 100px 0 100px;
+        color: lightgreen;
+        font-size: 16px;
+    }
+
+    #skill_list_wrapper {
+        padding: 0 100px;
+        color: lightgreen;
+        list-style-type: none;
+    }
+    
+    #skill_list_wrapper ul {
+        text-align: left;
+    }
 }
 
-#learning {
-    margin:0 0 300px 0;
-}
-
-#introduction_wrapper h1 {
-    text-align: center;
-    font-size: 60px;
-}
-
-@media screen and (max-width:1600px) {
-    #introduction_wrapper {
-        width: 100%;
-        height: 100%;
-
-        background-image: url("../images/spinnaker.jpg");
+@media screen and (max-width: 1100px) {
+    #introduction {
+        background-image: url("../images/spinnaker_neon.jpg");
         background-size: cover;
-        background-position-y: -100px;
+        background-repeat: no-repeat;
+        background-position: center;
         background-attachment: fixed;
     }
 }
 
-@media screen and (max-width:1400px) {
-    #introduction_wrapper {
-        width: 100%;
-        height: 100%;
-
-        background-image: url("../images/spinnaker.jpg");
-        background-size: cover;
-        background-position-y: 0px;
-        background-attachment: fixed;
-    }
-
-    .lukemindImg {
-        width:250px;
-        height:auto;
+@media screen and (max-width: 1000px) {
+    #title_wrapper {
+        padding: 100px 100px 0 100px;
+        color: lightgreen;
+        font-size: 14px;
     }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1000px) {
+    #title_wrapper {
+        padding: 100px 100px 0 50px;
+        color: lightgreen;
+        font-size: 10px;
+    }
 
-    #introduction_wrapper {
-        width: 100%;
-        height: 100%;
+    #skill_list_wrapper {
+        padding: 0 50px;
+        color: lightgreen;
+        list-style-type: none;
+    }
+}
 
-        background-image: url("../images/spinnaker.jpg");
+@media screen and (max-width: 600px) {
+    #introduction {
+        background-image: url("../images/spinnaker_neon.jpg");
         background-size: cover;
-        background-position-y: 0px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+        #title_wrapper {
+        padding: 100px 100px 0 10px;
+        color: lightgreen;
+        font-size: 10px;
+    }
+
+    #skill_list_wrapper {
+        padding: 0 10px;
+        color: lightgreen;
+        list-style-type: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #introduction {
+        background-image: url("../images/spinnaker_neon.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         background-attachment: fixed;
     }
 
     #about_me_wrapper {
-        display: inline-block;
-        width:200px;
-        margin-right: 280px;
-        height: 300px;
-        vertical-align:middle;
+        width:60%;
     }
 
-    .about_me {
-        text-align: justify;
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        animation: fadeToRight 2s;
+    #title_wrapper {
+        padding: 50px 0 0 10px;
+        color: lightgreen;
     }
 
-    #me {
-        width:150px;
+    #title_wrapper h1 {
+        font-size:16px;
     }
 
-    #me_wrapper {
-        display: inline-block;
-        width:240px;
-        animation: fadeToLeft 2s;
+    #skill_list_wrapper {
+        font-size: 14px;
+        padding: 0 10px;
+        color: lightgreen;
+        list-style-type: none;
+    }
+
+    #update {
+        padding: 50px 0 0 10px;
+    }
+
+    #update_wrapper #update h2 {
+        font-size:16px;
     }
 }
 
-@media screen and (max-width:900px) {
-    #introduction_wrapper {
-        width: 100%;
-        height: 100%;
-
-        background-image: url("../images/spinnaker.jpg");
+@media screen and (max-height: 500px) {
+    #introduction {
+        background-image: url("../images/spinnaker_neon.jpg");
         background-size: cover;
-        background-position-x: -50px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: -140px;
         background-attachment: fixed;
     }
 
-    #about_me_wrapper {
-        display: inline-block;
-        width:200px;
-        margin-right: 50px;
-        height: 300px;
-        vertical-align:middle;
+    #title_wrapper {
+        padding: 100px 0 0 100px;
+        color: lightgreen;
+        font-size: 10px;
     }
 
-    .lukemindImg {
-        width:200px;
-        height:auto;
-    }
-}
-
-@media screen and (max-width:800px) {
-
-    #introduction_wrapper {
-        width: 100%;
-        height: 100%;
-
-        background-image: url("../images/spinnaker.jpg");
-        background-size: cover;
-        background-position-x:-100px;
-        background-attachment: fixed;
-    }
-}
-
-@media screen and (max-width:700px) {
-
-    #introduction_wrapper {
-        width: 100%;
-        height: 100%;
-
-        background-image: url("../images/spinnaker.jpg");
-        background-size: cover;
-        background-position-x: -130px;
-        background-attachment: fixed;
-    }
-
-    .about_me {
-        text-align: justify;
-        font-size: 12px;
-        font-family: Arial, Helvetica, sans-serif;
-        animation: fadeToRight 2s;
-    }
-
-    #about_me_wrapper {
-        display: inline-block;
-        width:70px;
-        margin-right: 200px;   
-    }
-
-    #me_wrapper {
-        display: inline-block;
-        width:120px;
-        animation: fadeToLeft 2s;
-    }
-
-    #me {
-        width:100px;
-    }
-
-    #introduction_wrapper h1 {
-    text-align: center;
-    font-size: 30px;
-}
-}
-
-@media screen and (max-width:600px) {
-    #introduction_wrapper {
-        width: 100%;
-        height: 100%;
-
-        background-image: url("../images/spinnaker.jpg");
-        background-size: cover;
-        background-position-x: -100px;
-        background-attachment: fixed;
-    }
-
-    .lukemindImg {
-        width:200px;
-        height:auto;
-    }
-
-        #about_me_wrapper {
-        display: inline-block;
-        width:70px;
-        margin-right: 100px;   
-    }
-}
-
-@media screen and (max-width:500px) {
-    #introduction_wrapper {
-        width: 100%;
-        height: 100%;
-
-        background-image: url("../images/spinnaker.jpg");
-        background-size: cover;
-        background-position-x: -100px;
-        background-attachment: fixed;
-    }
-
-    .lukemindImg {
-        width:170px;
-        height:auto;
-        
-    }
-
-        #about_me_wrapper {
-        display: inline-block;
-        width:70px;
-        margin-right: 100px;   
+    #skill_list_wrapper {
+        font-size: 14px;
+        padding: 0 100px;
+        color: lightgreen;
+        list-style-type: none;
     }
 }
