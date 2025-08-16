@@ -2,8 +2,6 @@ import React from "react"
 import { useState, useEffect } from "react";
 import './styles/form.css'
 import './styles/blogs.css'
-import { Blogdata } from "./blogdata";
-import { ForkLeft } from "@mui/icons-material"
 
 function Blogs() {
 
