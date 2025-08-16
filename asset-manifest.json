@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lukemind/static/css/main.9edb35ac.css",
-    "main.js": "/lukemind/static/js/main.48e80532.js",
+    "main.js": "/lukemind/static/js/main.163ed42a.js",
     "static/js/453.f9c01664.chunk.js": "/lukemind/static/js/453.f9c01664.chunk.js",
     "static/media/profile.jpg": "/lukemind/static/media/profile.53ec1bc9aa57025e5f9f.jpg",
     "static/media/lukemindmobile.jpg": "/lukemind/static/media/lukemindmobile.bff1773be90577713a1c.jpg",
@@ -16,14 +16,13 @@
     "static/media/cv.pdf": "/lukemind/static/media/cv.299af899609a3f2e72aa.pdf",
     "static/media/CNN.png": "/lukemind/static/media/CNN.e35ffa8e136e64698fc5.png",
     "static/media/banner.jpeg": "/lukemind/static/media/banner.57b1db56b1c5b445915c.jpeg",
-    "static/media/logo.svg": "/lukemind/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/lukemind/index.html",
     "main.9edb35ac.css.map": "/lukemind/static/css/main.9edb35ac.css.map",
-    "main.48e80532.js.map": "/lukemind/static/js/main.48e80532.js.map",
+    "main.163ed42a.js.map": "/lukemind/static/js/main.163ed42a.js.map",
     "453.f9c01664.chunk.js.map": "/lukemind/static/js/453.f9c01664.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9edb35ac.css",
-    "static/js/main.48e80532.js"
+    "static/js/main.163ed42a.js"
   ]
 }
