@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/lukemind/static/css/main.9edb35ac.css",
-    "main.js": "/lukemind/static/js/main.163ed42a.js",
+    "main.css": "/lukemind/static/css/main.7fdd7620.css",
+    "main.js": "/lukemind/static/js/main.682d8112.js",
     "static/js/453.f9c01664.chunk.js": "/lukemind/static/js/453.f9c01664.chunk.js",
     "static/media/profile.jpg": "/lukemind/static/media/profile.53ec1bc9aa57025e5f9f.jpg",
-    "static/media/lukemindmobile.jpg": "/lukemind/static/media/lukemindmobile.bff1773be90577713a1c.jpg",
+    "static/media/TasksnNotes.jpg": "/lukemind/static/media/TasksnNotes.bff1773be90577713a1c.jpg",
     "static/media/website.png": "/lukemind/static/media/website.0415223ec0191b487d3d.png",
     "static/media/spinnaker_edge.jpg": "/lukemind/static/media/spinnaker_edge.aec12e2c58f29bd7221f.jpg",
     "static/media/learning4.png": "/lukemind/static/media/learning4.b55818a50bc96e4d521f.png",
@@ -17,12 +17,12 @@
     "static/media/CNN.png": "/lukemind/static/media/CNN.e35ffa8e136e64698fc5.png",
     "static/media/banner.jpeg": "/lukemind/static/media/banner.57b1db56b1c5b445915c.jpeg",
     "index.html": "/lukemind/index.html",
-    "main.9edb35ac.css.map": "/lukemind/static/css/main.9edb35ac.css.map",
-    "main.163ed42a.js.map": "/lukemind/static/js/main.163ed42a.js.map",
+    "main.7fdd7620.css.map": "/lukemind/static/css/main.7fdd7620.css.map",
+    "main.682d8112.js.map": "/lukemind/static/js/main.682d8112.js.map",
     "453.f9c01664.chunk.js.map": "/lukemind/static/js/453.f9c01664.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9edb35ac.css",
-    "static/js/main.163ed42a.js"
+    "static/css/main.7fdd7620.css",
+    "static/js/main.682d8112.js"
   ]
 }
