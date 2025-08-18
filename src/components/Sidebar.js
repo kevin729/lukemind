@@ -3,7 +3,8 @@ import React from "react";
 import './styles/sidebar.css'
 import { Sidebardata } from "./sidebardata";
 
-const Sidebar = () => { return (
+const Sidebar = () => { 
+    return (
         <div id="sidebar">
             <ul>
                 {

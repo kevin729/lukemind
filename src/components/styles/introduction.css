@@ -26,7 +26,13 @@
     padding: 200px 100px 0 200px;
 }
 
+#title_wrapper {
+    font-family: 'Courier New', Courier, monospace;
+    animation: fadeToRight 2s;
+}
+
 #skill_list_wrapper ul {
+    font-family: 'Courier New', Courier, monospace;
     text-align: left;
 }
 
@@ -36,9 +42,18 @@
     height: 100%;
 }
 
-#update {
-    padding: 200px 0 200px 0;
+#moreBelowTextWrapper {
+    width:50%;
+    height:100%;
 }
+
+#moreBelowText {
+    text-align: justify;
+    color: lightgreen;
+    padding: 200px 100px 0 200px;
+}
+
+
 
 @keyframes fadeToRight {
   0% { opacity: 0; transform: translateX(-20%);}
@@ -129,23 +144,23 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     #title_wrapper h1 {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     #skill_list_wrapper {
-        font-size: 14px;
+        font-size: 11px;
     }
 }
 
 @media screen and (max-width: 380px) {
     #title_wrapper h1 {
-        font-size: 14px;
+        font-size: 10px;
     }
 
     #skill_list_wrapper {
-        font-size: 10px;
+        font-size: 7px;
     }
 }
 

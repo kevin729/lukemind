@@ -14,9 +14,10 @@ const Introduction = () => {
                     <div id="skill_list_wrapper">
                         <ul>
                             <li>Full Stack Web Developer</li>
-                            <li>Database Management</li>
+                            <li>Image Manipulation</li>
                             <li>Mobile Responsive</li>
                             <li>REST API User</li>
+                            <li>More Below</li>
                         </ul>
                     </div>
                 </div>

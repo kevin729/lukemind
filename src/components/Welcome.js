@@ -17,6 +17,7 @@ class Welcome extends Component {
             <div id="WelcomeWrapper">
                 <Introduction />
                 <Sidebar />
+                <Products/>
             </div>
         )
     }
