@@ -9,8 +9,9 @@ import ProductData from "./productdata"
 const Products = () => {
     return (
         <div id="productsWrapper">
-            <div><h1>Projects</h1></div>
             <div>
+                <div><h1>Projects</h1></div>
+                <div className="products">
                 {
                     ProductData.map((val, key) => {
                         return(
@@ -27,8 +28,8 @@ const Products = () => {
                             </div>
                         )
                     })
-                    
                 }
+                </div>
             </div>
         </div>
     )
