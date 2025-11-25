@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lukemind/static/css/main.fd2cb9e8.css",
+    "main.css": "/lukemind/static/css/main.fca3c209.css",
     "main.js": "/lukemind/static/js/main.61543c47.js",
     "static/js/453.f9c01664.chunk.js": "/lukemind/static/js/453.f9c01664.chunk.js",
     "static/media/profile.jpg": "/lukemind/static/media/profile.53ec1bc9aa57025e5f9f.jpg",
@@ -18,12 +18,12 @@
     "static/media/CNN.png": "/lukemind/static/media/CNN.e35ffa8e136e64698fc5.png",
     "static/media/banner.jpeg": "/lukemind/static/media/banner.57b1db56b1c5b445915c.jpeg",
     "index.html": "/lukemind/index.html",
-    "main.fd2cb9e8.css.map": "/lukemind/static/css/main.fd2cb9e8.css.map",
+    "main.fca3c209.css.map": "/lukemind/static/css/main.fca3c209.css.map",
     "main.61543c47.js.map": "/lukemind/static/js/main.61543c47.js.map",
     "453.f9c01664.chunk.js.map": "/lukemind/static/js/453.f9c01664.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd2cb9e8.css",
+    "static/css/main.fca3c209.css",
     "static/js/main.61543c47.js"
   ]
 }
