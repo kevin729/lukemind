@@ -2,6 +2,17 @@ import { useState, useEffect } from "react";
 import { Chart } from 'react-google-charts';
 import "./styles/githubchart.css"
 
+const language = {
+    Java: 20,
+    Javascript:30,
+    "C#":5
+}
+const data = 
+{
+    name: "Kev",
+    age: 29,
+    licence: true
+}
 
 
 
@@ -10,49 +21,27 @@ const GithubInfo = () => {
     const [languages, setLanguages] = useState()
 
     useEffect(() => {
-        const fetchLanguages = async (languageList) => {
-            const promisedListMap = languageList.map(async url => {
-                return await fetch(url)
-                    .then((response) => response.json())
-                    .then((data) => data)
+       const fetchLanguages = async (languageURLList) => {
+            const languageMaps = await Promise.all(
+                languageURLList.map(async url => {
+                    return await (await fetch(url)).json()
+                })
+            )
+
+            const languageMap = {}
+
+            languageMaps.forEach(langMap => {
+                for (const [lang, value] of Object.entries(langMap)) {
+                    languageMap[lang] = (languageMap[lang] || 0 + value)
+                }
             })
-            
-            Promise.all(promisedListMap).then((languages => {
-                let languageMap = {}
-                languages.map(repoLanguageMap => {
-                    Object.keys(repoLanguageMap).map(key => {
-                        if (languageMap.hasOwnProperty(key)) {
-                            languageMap[key] += repoLanguageMap[key]
-                        } else {
-                            languageMap[key] = repoLanguageMap[key]
-                        }
-                    })
-                })
 
-                const languageData = [['language', 'score']]
-                
-                Object.keys(languageMap).map(key => {
-                    languageData.push([key, languageMap[key]])
-                })
-
-                setLanguages(languageData)
-            }))
+            setLanguages([['language', 'score'], ...Object.entries(languageMap)])
         }
         
         const fetchRepos = async () => {
-            const languageList = fetch(URL)
-                .then((response) => response.json())
-                .then((data) => {
-                    if(!data.items) 
-                        return
-
-                    const languageList = data.items.map(repo => {
-                        return repo.languages_url
-                    })
-
-                    return languageList
-                })
-            return languageList
+            const repos = await (await fetch(URL)).json()
+            return repos.items?.map(repo => repo.languages_url) || []
         }
 
         fetchRepos().then(languageList => {

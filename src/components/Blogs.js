@@ -10,12 +10,9 @@ function Blogs() {
     const [content, setContent] = useState()
     useEffect(() => {
         const fetchBlog = async (blogWrapper) => {
-            await fetch(URL)
-                .then(response => response.json())
-                .then(data => {
-                    blogWrapper.style.display = "block"
-                    setContent(data.content)
-                })
+            const blog = await (await fetch(URL)).json()
+            blogWrapper.style.display = "block"
+            setContent(blog.content)
         }
 
         fetchBlog(blogWrapperRef.current)

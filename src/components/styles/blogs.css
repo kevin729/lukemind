@@ -8,9 +8,26 @@ p {
     color: lime;
 }
 
+@media screen and (max-width: 1400px) {
+    .blog-wrapper {
+        padding: 50px 200px;
+        background-color: black;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .blog-wrapper {
         padding: 50px 50px;
+    }
+
+    .blog-wrapper p span {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .blog-wrapper {
+        padding: 50px 10px;
     }
 
     .blog-wrapper p span {

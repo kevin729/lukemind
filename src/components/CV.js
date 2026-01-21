@@ -11,21 +11,18 @@ const CV = () => {
     
      
     useEffect(() => {
-        const fetchCV = async (cvWrapper) => {
-            await fetch(URL)
-                .then(response => response.json())
-                .then(data => {
-                    console.log(cvWrapper)
-                    cvWrapperRef.current.style.display = 'block'
-                    setContent(data.content)
-                })
+        const fetchCV = async () => {
+            const CV = await (await fetch(URL)).json()
+            cvWrapperRef.current.style.display = 'block'
+            setContent(CV.content)
         }
     
-        fetchCV(cvWrapperRef.current)
+        fetchCV()
     })
 
     return (
         <div ref={cvWrapperRef} id="cvWrapper">
+            <div id="downloadCV"><a download={cv} href={cv}>Download</a></div>
             <div id="cv" dangerouslySetInnerHTML={{__html: content}}></div>
             <Learning />
         </div>
