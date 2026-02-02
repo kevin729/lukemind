@@ -12,9 +12,9 @@ const CV = () => {
      
     useEffect(() => {
         const fetchCV = async () => {
-            const CV = await (await fetch(URL)).json()
+            const cv = await (await fetch(URL)).json()
             cvWrapperRef.current.style.display = 'block'
-            setContent(CV.content)
+            setContent(cv.content)
         }
     
         fetchCV()

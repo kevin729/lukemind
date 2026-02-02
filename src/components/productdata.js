@@ -1,16 +1,16 @@
 import TasksnNotes from "./images/TasksnNotes.jpg"
-import Neutreno from "./images/neutreno.jpg"
+import Neutrino from "./images/neutreno.jpg"
 
 const productData = [
     {
-        title: "Life Assemble",
+        title: "Life Assist",
         image: TasksnNotes,
         caption: "Android app for taking notes and priorties tasks quick and easy"
     },
 
     {
-        title: "Neutreno",
-        image: Neutreno,
+        title: "Neutrino",
+        image: Neutrino,
         caption: "ORC tool running on spring boot server and mobile"
     },
 ]
