@@ -6,9 +6,13 @@ import learning3 from "./images/learning3.png"
 import learning4 from "./images/learning4.png"
 import { ArrowLeft } from "@mui/icons-material";
 import { ArrowRight } from "@mui/icons-material";
+import { Circle } from "@mui/icons-material";
 
 var index = 0;
 var prevIndex = 0;
+
+const certs = document.getElementsByClassName("cert")
+const options = document.getElementsByClassName("circle")
 const slideImages = [
     {
         image: learning1
@@ -24,7 +28,7 @@ const slideImages = [
     },
 ]
 
-var timer = setInterval(next, 5000)
+var timer = setInterval(next, 10000)
 var callback
 var animating = false;
 
@@ -60,14 +64,20 @@ function prev() {
     update(true)
 }
 
+function select(i) {
+    prevIndex = index
+    index = i
+
+    update(index - prevIndex < 0)
+}
+
 function showSlide(cert, prevDirection) {
     cert.className = prevDirection ? 'cert cert-show-prev' : 'cert cert-show'
     cert.addEventListener('animationend', function eventHandlier(e) { 
         animating = false;
-        if (callback) {
-            callback()
-            callback = null;
-        }
+        callback?.()
+        callback = null;
+
         cert.removeEventListener('animationend', eventHandlier)
     })
 }
@@ -84,14 +94,11 @@ function clearSlide(currentCert, nextCert, prevDirection) {
 
 function update(prevDirection) {
     clearInterval(timer)
-    timer = setInterval(next, 5000)
+    timer = setInterval(next, 10000)
 
-    let certs = document.getElementsByClassName("cert")
-    for (let i = 0; i < certs.length; i++) {
-        if (i == prevIndex) {
-            clearSlide(certs[prevIndex], certs[index], prevDirection)
-        }
-    }
+    options[prevIndex].className = "circle circle-small"
+    options[index].className = "circle circle-big"
+    clearSlide(certs[prevIndex], certs[index], prevDirection)
 }
 
 const Learning = () => {
@@ -109,13 +116,30 @@ const Learning = () => {
                 }
             </div>
             
+            <div id="controlWrapper">
+                <div className="inline-block" style={{width:"50px"}} onClick={prev}>
+                    <ArrowLeft/>
+                </div>
 
-            <div className="inline-block" style={{width:"50px"}} onClick={prev}>
-                <ArrowLeft/>
-            </div>
+                <div className="circle circle-big" onClick={() => select(0)}>
+                    <Circle style={{width:"100%"}} />
+                </div>
 
-            <div className="inline-block" style={{width:"50px"}} onClick={next} >
-                <ArrowRight/>
+                <div className="circle" onClick={() => select(1)}>
+                    <Circle style={{width:"100%"}}/>
+                </div>
+
+                <div className="circle" onClick={() => select(2)}>
+                    <Circle style={{width:"100%"}} />
+                </div>
+
+                <div className="circle" onClick={() => select(3)}>
+                    <Circle style={{width:"100%"}}/>
+                </div>
+
+                <div className="inline-block" style={{width:"50px"}} onClick={next} >
+                    <ArrowRight />
+                </div>
             </div>
         </div>
         
