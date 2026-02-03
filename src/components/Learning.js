@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import "./styles/learning.css"
 import learning1 from "./images/learning1.png"
 import learning2 from "./images/learning2.png"
 import learning3 from "./images/learning3.png"
@@ -52,7 +53,6 @@ function prev() {
     prevIndex = index;
     if (index > 0) {
         index--
-        
     } else {
         index = slideImages.length-1
     }
@@ -72,13 +72,13 @@ function showSlide(cert, prevDirection) {
     })
 }
 
-function clearSlide(oldCert, newCert, prevDirection) {
+function clearSlide(currentCert, nextCert, prevDirection) {
     animating = true;
-    oldCert.className = prevDirection ? 'cert cert-invisible-prev' : 'cert cert-invisible'
-    oldCert.addEventListener('animationend', function eventHandlier(e) { 
-        oldCert.className = 'cert cert-none' 
-        showSlide(newCert, prevDirection)
-        oldCert.removeEventListener('animationend', eventHandlier)
+    currentCert.className = prevDirection ? 'cert cert-invisible-prev' : 'cert cert-invisible'
+    currentCert.addEventListener('animationend', function eventHandlier(e) { 
+        currentCert.className = 'cert cert-none' 
+        showSlide(nextCert, prevDirection)
+        currentCert.removeEventListener('animationend', eventHandlier)
     })
 }
 
