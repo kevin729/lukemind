@@ -2,7 +2,7 @@ import React from "react";
 import './styles/header.css'
 import { HeadingLeftData } from "./headingleftdata";
 import { HeadingRightData } from "./headingrightdata";
-import Banner from "./images/banner.jpeg"
+
 
 const Heading = () => {
     return (

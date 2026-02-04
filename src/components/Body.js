@@ -14,7 +14,7 @@ const Body = () => {
             <HashRouter>
                 <Routes>
                     <Route exact path="/" Component={Welcome} />
-                    <Route path="/cv" Component={CV} />
+                    <Route exact path="/cv" Component={CV} />
                     <Route path="/products" Component={Products} />
                     <Route path="/profile" Component={Profile} />
                     <Route path="/blogs" Component={Blogs} />

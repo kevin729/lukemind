@@ -12,9 +12,9 @@ const CV = () => {
      
     useEffect(() => {
         const fetchCV = async () => {
-            const cv = await (await fetch(URL)).json()
+            const CV = await (await fetch(URL)).json()
             cvWrapperRef.current.style.display = 'block'
-            setContent(cv.content)
+            setContent(CV.content)
         }
     
         fetchCV()
@@ -22,7 +22,7 @@ const CV = () => {
 
     return (
         <div ref={cvWrapperRef} id="cvWrapper">
-            <div id="downloadCV"><a download={cv} href={cv}>Download</a></div>
+            <div id="downloadCV"><a target="_blank" download={cv} href={cv}>Download</a></div>
             <div id="cv" dangerouslySetInnerHTML={{__html: content}}></div>
             <Learning />
         </div>

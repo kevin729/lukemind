@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./styles/learning.css"
 import learning1 from "./images/learning1.png"
 import learning2 from "./images/learning2.png"
@@ -33,8 +33,16 @@ const Learning = () => {
         },
     ]
 
-    timer = setInterval(next, 10000)
+    const [timer, setTimer] = useState(0)
 
+    useEffect(() => {
+        var timer = setInterval(() => {
+            next()
+        }, 10000)
+        setTimer(timer)
+        return () => {clearInterval(timer)}
+    }, [])
+    
     function next() {
         if (animating) {
             callback = next;
@@ -102,8 +110,7 @@ const Learning = () => {
 
     function update(prevDirection) {
         if (!animating) {
-            clearInterval(timer)
-            timer = setInterval(next, 10000)
+
 
             options[prevIndex].className = "circle circle-small"
             options[index].className = "circle circle-big"
@@ -130,12 +137,12 @@ const Learning = () => {
                     <ArrowLeft />
                 </div>
 
-                {[0, 1, 2, 3].map((val, key) => (
+                {slideImages.map((val, key) => (
                     <div
                         key={key}
-                        ref={el => { options[val] = el }}
-                        className={val == 0 ? "circle circle-big" : "circle"}
-                        onClick={() => select(val)}
+                        ref={el => { options[key] = el }}
+                        className={key == 0 ? "circle circle-big" : "circle"}
+                        onClick={() => select(key)}
                     >
                         <Circle style={{ width: "100%" }} />
                     </div>
