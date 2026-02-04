@@ -40,7 +40,7 @@ const Learning = () => {
             next()
         }, 10000)
         setTimer(timer)
-        return () => {clearInterval(timer)}
+        return () => {clearInterval(timer); index = 0}
     }, [])
     
     function next() {
@@ -110,8 +110,6 @@ const Learning = () => {
 
     function update(prevDirection) {
         if (!animating) {
-
-
             options[prevIndex].className = "circle circle-small"
             options[index].className = "circle circle-big"
             clearSlide(certs[prevIndex], certs[index], prevDirection)
