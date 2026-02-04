@@ -17,6 +17,8 @@
 
 #cvWrapper P {color: white;}
 
+span {color: white}
+
 @media screen and (max-width: 1700px) {
     #cvWrapper {
         padding: 50px 400px;
