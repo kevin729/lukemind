@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lukemind/static/css/main.cdd2c8c0.css",
-    "main.js": "/lukemind/static/js/main.7801a0fe.js",
+    "main.css": "/lukemind/static/css/main.5ed3ac0e.css",
+    "main.js": "/lukemind/static/js/main.8ef978c0.js",
     "static/js/453.f9c01664.chunk.js": "/lukemind/static/js/453.f9c01664.chunk.js",
     "static/media/profile.jpg": "/lukemind/static/media/profile.53ec1bc9aa57025e5f9f.jpg",
     "static/media/TasksnNotes.jpg": "/lukemind/static/media/TasksnNotes.bff1773be90577713a1c.jpg",
@@ -14,16 +14,16 @@
     "static/media/learning2.png": "/lukemind/static/media/learning2.05663ad8029495b2549a.png",
     "static/media/model.png": "/lukemind/static/media/model.5efaf0df0b51e5cdedf2.png",
     "static/media/drawdroid.jpg": "/lukemind/static/media/drawdroid.7a60d7520daa0157bb34.jpg",
-    "static/media/cv.pdf": "/lukemind/static/media/cv.299af899609a3f2e72aa.pdf",
+    "static/media/cv.pdf": "/lukemind/static/media/cv.39c68c9ffddfe4ba3623.pdf",
     "static/media/CNN.png": "/lukemind/static/media/CNN.e35ffa8e136e64698fc5.png",
     "static/media/banner.jpeg": "/lukemind/static/media/banner.57b1db56b1c5b445915c.jpeg",
     "index.html": "/lukemind/index.html",
-    "main.cdd2c8c0.css.map": "/lukemind/static/css/main.cdd2c8c0.css.map",
-    "main.7801a0fe.js.map": "/lukemind/static/js/main.7801a0fe.js.map",
+    "main.5ed3ac0e.css.map": "/lukemind/static/css/main.5ed3ac0e.css.map",
+    "main.8ef978c0.js.map": "/lukemind/static/js/main.8ef978c0.js.map",
     "453.f9c01664.chunk.js.map": "/lukemind/static/js/453.f9c01664.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cdd2c8c0.css",
-    "static/js/main.7801a0fe.js"
+    "static/css/main.5ed3ac0e.css",
+    "static/js/main.8ef978c0.js"
   ]
 }
