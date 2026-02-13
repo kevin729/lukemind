@@ -1,6 +1,6 @@
 #cvWrapper {
     display: none;
-    padding: 50px 600px;
+    padding: 70px 600px;
     background-color: Black;
     color: white;
 }
@@ -21,7 +21,7 @@ span {color: white}
 
 @media screen and (max-width: 1700px) {
     #cvWrapper {
-        padding: 50px 400px;
+        padding: 70px 400px;
         background-color: Black;
         color: white;
     }
@@ -29,7 +29,7 @@ span {color: white}
 
 @media screen and (max-width: 1400px) {
     #cvWrapper {
-        padding: 50px 200px;
+        padding: 70px 200px;
         background-color: Black;
         color: white;
     }
@@ -37,7 +37,7 @@ span {color: white}
 
 @media screen and (max-width: 900px) {
     #cvWrapper {
-        padding: 50px 150px;
+        padding: 70px 150px;
         background-color: Black;
         color: white;
     }
@@ -45,7 +45,7 @@ span {color: white}
 
 @media screen and (max-width: 700px) {
     #cvWrapper {
-        padding: 10%;
+        padding: 70px 10%;
         background-color: Black;
         color: white;
     }
