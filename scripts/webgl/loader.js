@@ -14,7 +14,7 @@ var light = {
 var camera = {
 	x : 0,
 	y : 0,
-	z : 30,
+	z : 100,
 	rX : 0,
 	rY : 0,
 	rZ : 0
@@ -27,11 +27,13 @@ var textures = {
 
 function loadTextures(index, initCallBack) {
 	
+	
 	var key = Object.keys(textures)[index]
 	var img = new Image()
 	img.crossOrigin="anonymous"
 	img.onload = function() {
 		var textureVBO = gl.createTexture()
+		
 		gl.bindTexture(gl.TEXTURE_2D, textureVBO)
 		gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.REPEAT)
 		gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.REPEAT)
@@ -46,6 +48,7 @@ function loadTextures(index, initCallBack) {
 		if (Object.keys(textures)[index+1] != null) {
 			loadTextures(index+1, initCallBack)
 		} else {
+			
 			initCallBack()
 		}
 	}
@@ -214,6 +217,7 @@ function initObjects() {
 	satellite = loadObject(satelliteData, null, gl.TRIANGLES, [0, 0, 50], [0, 180, 0], [1, 1, 1])
 
 	models.push(satellite)
+
 	start()
 }
 

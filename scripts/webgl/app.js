@@ -18,6 +18,7 @@ function init(_canvas) {
 	gl.enable(gl.CULL_FACE)
 
 	setupShader()
+	
 	loadTextures(0, initObjects)
 }
 
@@ -74,7 +75,7 @@ function orbitOrigin() {
 
 var clicked = false
 var oX, oY
-var distance = 30
+var distance = 100
 
 angleAround = 0
 angleOver = 0
@@ -140,18 +141,18 @@ function setCanvasMouseListeners() {
 		e.preventDefault();
 	})
 
-	canvas.addEventListener("wheel", function(e) {
-		distance += e.deltaY
+	// canvas.addEventListener("wheel", function(e) {
+	// 	distance += e.deltaY
 
-		distance = Math.max(11, distance)
+	// 	distance = Math.max(11, distance)
 
-		camera.x = distance * Math.sin(toRadians(angleAround)) * Math.cos(toRadians(angleOver)) + origin[0]
-		camera.y = distance * -Math.sin(toRadians(angleOver)) + origin[1]
-		camera.z = distance * Math.cos(toRadians(angleAround)) * Math.cos(toRadians(angleOver)) + origin[2]
+	// 	camera.x = distance * Math.sin(toRadians(angleAround)) * Math.cos(toRadians(angleOver)) + origin[0]
+	// 	camera.y = distance * -Math.sin(toRadians(angleOver)) + origin[1]
+	// 	camera.z = distance * Math.cos(toRadians(angleAround)) * Math.cos(toRadians(angleOver)) + origin[2]
 	
 
-		e.preventDefault();
-	})
+	// 	e.preventDefault();
+	// })
 }
 
 
