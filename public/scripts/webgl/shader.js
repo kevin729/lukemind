@@ -1,7 +1,8 @@
 var projMatrix = new Float32Array(16)
+var program
+var projectionLocation
 
 function setupShader() {
-
 	mat4.perspective(projMatrix, glMatrix.toRadian(45), canvas.width/canvas.height, 0.1, 10000)
 
 	var vertexText = 
@@ -77,7 +78,7 @@ function setupShader() {
 	gl.compileShader(vertexShader)
 	gl.compileShader(fragmentShader)
 	
-	var program = gl.createProgram()
+	program = gl.createProgram()
 	gl.attachShader(program, vertexShader)
 	gl.attachShader(program, fragmentShader)
 	gl.linkProgram(program)
@@ -98,7 +99,7 @@ function setupShader() {
 	var reflectivityLocation = gl.getUniformLocation(program, "reflectivity")
 	var shineDampLocation = gl.getUniformLocation(program, "shineDamp")
 	
-	var projectionLocation = gl.getUniformLocation(program, "projection")
+	projectionLocation = gl.getUniformLocation(program, "projection")
 
 	gl.useProgram(program)
 	gl.uniformMatrix4fv(projectionLocation, gl.FALSE, projMatrix)
@@ -118,4 +119,11 @@ function setupShader() {
 		shineDampLocation,
 		useTextureLocation
 	}
+}
+
+function updateProjection() {
+	mat4.perspective(projMatrix, glMatrix.toRadian(45), window.innerWidth/window.innerHeight, 0.1, 10000)
+    gl.useProgram(program)
+	gl.uniformMatrix4fv(projectionLocation, gl.FALSE, projMatrix)
+	gl.useProgram(null)
 }

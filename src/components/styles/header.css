@@ -9,19 +9,14 @@
     margin:0;
     height: 100%;
     list-style-type: none;
-    display: flex;
-    align-items: center;
-    text-align: center;
   }
   
   .menu-item {
     width: 110px;
     height: 100%;
     color:white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Georgia, serif;
+    display: inline-block;
+
     text-decoration: none;
   }
 
@@ -30,24 +25,15 @@
   }
 
 
-  .banner {
-    background-image: url(../images/banner.jpeg);
-    background-repeat: repeat-y;
-    background-position: center;
-    opacity: 0;
-    width: 100%;
-    height:60%;
-  }
-
   .head-wrapper {
-    width:100%;
+    
     height:70px;
-    position: fixed;
+    text-align: center;
     animation: slideDown 1s;
   }
   
   .head-navbar {
-    width:100%;
+    width: 100%;
     height:100%;
   }
 
@@ -59,58 +45,11 @@
   nav {
     height:100%;
   }
-  
-  .lefthead {
-    float:left;
-    width:50%;
-    height:100%;
-  }
-  
-  .righthead {
-    float:right;
-    width:50%;
-    height:100%;
-  }
-
-  .righthead ul {
-    float:right;
-  }
-  
+    
   .canvas-logo {
     margin-left: 10px;
     margin-right: 10px;
     width:80px;
     height:auto;
     float: left;
-  }
-
-  @media screen and (max-width:900px) {
-    .head-wrapper {
-      height:60px;
-    }
-
-    .menu-item {
-      width: 100px;
-      height: 100%;
-      color:white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
-  @media screen and (max-width:700px) {
-    .menu-item {
-      width: 80px;
-      height: 100%;
-      color:white;
-      font-size: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    #banner {
-        display: none;
-    }
   }

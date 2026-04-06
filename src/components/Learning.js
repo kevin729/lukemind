@@ -10,7 +10,6 @@ import { Circle } from "@mui/icons-material";
 
 var index = 0;
 var prevIndex = 0;
-var timer
 var animating = false;
 var callback
 

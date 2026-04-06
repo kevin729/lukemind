@@ -1,237 +1,114 @@
 #introduction_wrapper {
     width: 100%;
-    height: 100%;
+    height:100%;
+
 }
 
 #introduction {
-    width:100%;
-    height:100%;
+    height: 100%;
     display: flex;
-    background-image: url("../images/spinnaker_edge.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: -200px;
-    background-attachment: fixed;
+    align-items: center;
 }
 
-#logo3DWrapper {
+#left_section {
     width: 50%;
+    display: inline-block;
+}
+
+#left_section * {
+    float: left;
+}
+
+#right_section {
+    width: 50%;
+    display: inline-block;
+}
+
+#right_section #about_me {
+    float: right;
     
 }
 
-#logo3DWrapper div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:50%;
+#right_section #about_me * {
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+#title_wrapper h1 {
+    font-weight: 900;
+}
+
+#profileImg {
+    width:200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+* {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+ul {
+    margin: 0;
+    padding:0;
 }
 
 #can {
-    width:512px;
-    height:288px;
-}
-
-#about_me_wrapper {
-    width: 50%;
-    height: 100%;
-}
-
-#about_me {
-    text-align: justify;
-    color: lightgreen;
-    padding: 200px 100px 0 200px;
-}
-
-#title_wrapper {
-    font-family: 'Courier New', Courier, monospace;
-    animation: fadeToRight 1s forwards;
-    transform: translate(-100%);
-}
-
-#skill_list_wrapper ul {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: left;
-}
-
-#skill_list_wrapper ul li:nth-child(1) {
-    animation: fadeToRight 0.5s forwards;
-    animation-delay: 1s;
-    transform: translate(-100%);
-}
-
-#skill_list_wrapper ul li:nth-child(2) {
-    animation: fadeToRight 0.5s forwards;
-    animation-delay: 1.5s;
-    transform: translate(-100%);
-}
-
-#skill_list_wrapper ul li:nth-child(3) {
-    animation: fadeToRight 0.5s forwards;
-    animation-delay: 2s;
-    transform: translateX(-100%);
-    
-}
-
-#skill_list_wrapper ul li:nth-child(4) {
-    animation: fadeToRight 0.5s forwards;
-    animation-delay: 2.5s;
-    transform: translateX(-100%);
-}
-
-#skill_list_wrapper ul li:nth-child(5) {
-    animation: fadeToRight 0.5s forwards;
-    animation-delay: 3s;
-    transform: translateX(-100%);
-}
-
-
-#update_wrapper {
-    color: lightgreen;
-    width: 50%;
-    height: 100%;
-}
-
-#moreBelowTextWrapper {
-    width:50%;
+    position: fixed;
+    z-index: 10;
+    width:100%;
     height:100%;
+    top: 0;
+    left:0;
 }
 
-#moreBelowText {
-    text-align: justify;
-    color: lightgreen;
-    padding: 200px 100px 0 200px;
-}
-
-
-
-@keyframes fadeToRight {
-  0% {  transform: translateX(-100%);}
-  100% {  transform: translateX(0%);}
-}
-
-@keyframes fadeToLeft {
-  0% { transform: translateX(100%);}
-  100% { transform: translateX(0%);}
-}
-
-@media screen and (max-width: 1600px) {
-    #title_wrapper {
-        font-size: 14px;
-    }
-}
-
-
-@media screen and (max-width: 1400px) {
-    #about_me {
-        padding: 110px 0 0 110px;
-    }
-
-    #can {
-    width:256px;
-    height:144px;
-}
-}
-
-@media screen and (max-width: 1100px) {
-    #introduction {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-    }
-
-    #about_me {
-        padding: 70px 0 0 20px;
-    }
-
-    #title_wrapper {
-        font-size: 12px;
+@media screen and (max-width: 1300px) {
+    #profileImg {
+        width:150px;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    #title_wrapper {
-        font-size: 10px;
+    #profileImg {
+        width:130px;
+        height: auto;
+    }
+
+
+    #right_section #about_me div p {
+        font-size: 14px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    #introduction {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
+    #profileImg {
+        width:100px;
+        height: auto;
     }
 
-    #about_me_wrapper {
-        width:60%;
-    }
 
-    #about_me {
-        padding:60px 0 0 10px;
-    }
-
-    #about_me ul {
-        list-style-type: none;
-        padding: 0 0 0 10px;
-    }
-
-    #title_wrapper {
-        color: lightgreen;
-    }
-
-    #title_wrapper h1 {
-        font-size:16px;
-    }
-
-    #skill_list_wrapper {
-        font-size: 14px;
-    }
-
-    #update {
-        padding: 50px 0 0 10px;
-    }
-
-    #update_wrapper #update h2 {
-        font-size:16px;
+    #right_section #about_me div p {
+        font-size: 15px;
     }
 }
 
-@media screen and (max-width: 500px) {
-    #title_wrapper h1 {
-        font-size: 14px;
+@media screen and (max-width: 400px) {
+    #profileImg {
+        width:100px;
+        height: auto;
     }
 
-    #skill_list_wrapper {
-        font-size: 11px;
-    }
-}
 
-@media screen and (max-width: 380px) {
-    #title_wrapper h1 {
-        font-size: 10px;
-    }
-
-    #skill_list_wrapper {
-        font-size: 7px;
-    }
-}
-
-@media screen and (max-height: 500px) {
-    #introduction {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: -140px;
-        background-attachment: fixed;
-    }
-
-    #about_me {
-        padding: 100px 0 0 100px;
-    }
-
-    #skill_list_wrapper {
-        font-size: 14px;
+    #right_section #about_me div p {
+        font-size: 12px;
     }
 }

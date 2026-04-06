@@ -1,7 +1,6 @@
 import React from "react";
 import './styles/header.css'
-import { HeadingLeftData } from "./headingleftdata";
-import { HeadingRightData } from "./headingrightdata";
+import { HeadingData } from "./headingdata";
 
 
 const Heading = () => {
@@ -9,10 +8,10 @@ const Heading = () => {
         <div className="head-wrapper">
             <header className="head-navbar">
                 <nav>
-                    <div className="lefthead">
+                    <div className="menu-list-Wrapper">
                         <ul className="menu-list">
                             {
-                                HeadingLeftData.map((val, key) => {
+                                HeadingData.map((val, key) => {
                                     return (
                                         <a key={key} href={val.link} className="menu-link">
                                             <li className="menu-item">
@@ -29,30 +28,6 @@ const Heading = () => {
                                     )
                                 })
                             }
-                        </ul>
-                    </div>
-
-                    <div className="righthead">
-                        <ul className="menu-list">
-                            {
-                                HeadingRightData.map((val, key) => {
-                                    return (
-                                        <a key={key} href={val.link} className="menu-link">
-                                            <li className="menu-item">
-                                                <div>
-                                                    <div>
-                                                        {val.icon}
-                                                    </div>
-                                                    <div>
-                                                        {val.title}
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </a>
-                                    )
-                                })
-                            }
-                            
                         </ul>
                     </div>
                 </nav>

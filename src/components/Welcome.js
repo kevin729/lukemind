@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Introduction from "./Introduction";
-import Products from "./Products";
-import Sidebar from './Sidebar';
+
+
 import "./styles/welcome.css"
 
 class Welcome extends Component {
@@ -13,8 +13,6 @@ class Welcome extends Component {
         return (
             <div id="WelcomeWrapper">
                 <Introduction />
-                <Sidebar />
-                <Products/>
             </div>
         )
     }

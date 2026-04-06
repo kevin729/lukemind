@@ -1,6 +1,10 @@
+#cvPage {
+    height: 100%;
+}
+
 #cvWrapper {
     display: none;
-    padding: 70px 600px;
+
     background-color: Black;
     color: white;
 }
@@ -13,6 +17,15 @@
     margin-top: 50px;
     width: 100%;
     height: 100%;
+}
+
+#status {
+    font-weight: 800;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
 }
 
 #cvWrapper P {color: white;}

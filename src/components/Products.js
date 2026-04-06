@@ -15,7 +15,7 @@ const Products = () => {
                 {
                     ProductData.map((val, key) => {
                         return(
-                            <div key={key} class="product">
+                            <div key={key} className="product">
                                 <div className="productTitleWrapper">
                                     <h2>{val["title"]}</h2> 
                                 </div>

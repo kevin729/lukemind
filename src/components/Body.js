@@ -6,7 +6,7 @@ import './styles/body.css';
 import Products from "./Products";
 import Profile from "./Profile";
 import Blogs from "./Blogs";
-import Game from "./Game"
+
 
 const Body = () => {
     return (
