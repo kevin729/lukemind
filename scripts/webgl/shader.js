@@ -3,7 +3,7 @@ var program
 var projectionLocation
 
 function setupShader() {
-	mat4.perspective(projMatrix, glMatrix.toRadian(45), canvas.width/canvas.height, 0.1, 10000)
+	mat4.perspective(projMatrix, glMatrix.toRadian(45), window.innerWidth/window.innerHeight, 0.1, 10000)
 
 	var vertexText = 
 	[
